@@ -8,6 +8,7 @@
   ![Page view](./client1/public/photos/booking2.png)
 - User can register ,login and logout
   ![Page view](./client1/public/photos/booking4.png)
+  
   ![Page view](./client1/public/photos/booking5.png)
 - After search user can choose any hotel from search result
   ![Page view](./client1/public/photos/booking6.png)
