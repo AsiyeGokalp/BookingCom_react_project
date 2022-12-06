@@ -3,12 +3,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faCircleXmark} from "@fortawesome/free-solid-svg-icons";
 import useFetch from "../../hooks/useFetch"
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 
 export const Reserve = ({setOpen, hotelId}) => {
   const [selectedRooms, setSelectedRooms] = useState([])
   const {data, loading, error} = useFetch(`/hotels/room/${hotelId}`)
-  
+  const navigate = useNavigate()
+
   const handleSelect = (e) => {
     const checked = e.target.checked
     const value = e. target.value
@@ -16,7 +18,7 @@ export const Reserve = ({setOpen, hotelId}) => {
   }
 
   const handleClick = () => {
-    
+    navigate('/')
   }
   
   return (

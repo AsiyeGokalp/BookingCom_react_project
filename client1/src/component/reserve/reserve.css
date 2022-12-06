@@ -34,23 +34,14 @@
   display: flex;
   flex-direction: column;
   gap: 5px;
+  
 }
 
-.rTitle {
+.rTitle,.rprice,.rMax,.rDesc {
+ width: 300px;
   font-weight: 500;
 }
 
-.rDesc {
-  font-weight: 300;
-}
-
-.rMax {
-  font-size: 12px;
-}
-
-.rPrice {
-  font-weight: 500;
-}
 
 .rSelectRooms{
   display: flex;
@@ -64,7 +55,6 @@
   display: flex;
   flex-direction: column;
 }
-
 
 .rButton {
   border: none;
