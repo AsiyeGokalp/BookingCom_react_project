@@ -32,7 +32,7 @@ app.use((err, req, res, next) => {
 
 const connect = async () => {
   try {
-    await mongoose.connect(process.env.MONGO);
+    await mongoose.connect("mongodb+srv://melisaa:sifremongodb@cluster0.wdlh04c.mongodb.net/?retryWrites=true&w=majority");
     console.log("connected to mongodb")
   } catch (error) {
     throw (error);
